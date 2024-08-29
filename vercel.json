@@ -1,18 +1,4 @@
 {
-  "functions": {
-    "api/*.py": {
-      "runtime": "vercel-python"
-    }
-  },
-  "builds": [
-    {
-      "src": "frontend/vite.config.js",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "frontend/dist"
-      }
-    }
-  ],
   "routes": [
     {
       "src": "/api/(.*)",
