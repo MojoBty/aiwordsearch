@@ -53,7 +53,7 @@ export default function ThemeInputForm({ onDataChange }) {
     }
     
 
-    axios.post('http://aiwordsearch/api/process', data)
+    axios.post('https://aiwordsearch/api/process', data)
       .then(response => {
         console.log('Response data:', response.data);
         onDataChange(response.data, words)
