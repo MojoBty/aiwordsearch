@@ -53,7 +53,7 @@ export default function ThemeInputForm({ onDataChange }) {
     }
     
 
-    axios.post('https://aiwordsearch.vercel.app/api/process', data)
+    axios.post('/api/process', data)
       .then(response => {
         console.log('Response data:', response.data);
         onDataChange(response.data, words)
